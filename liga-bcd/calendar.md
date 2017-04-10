@@ -1,6 +1,6 @@
 ---
 layout: calendar
-title: Calendar
-permalink: /calendar/
+title: Calendario 
+permalink: /calendario/
 ---
 
