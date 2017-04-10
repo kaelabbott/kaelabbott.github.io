@@ -1,0 +1,765 @@
+---
+layout: default
+---
+
+          
+  <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content'}">
+                        <li class="uk-active"><a href="#">TEMPORADA 1</a></li>
+                        <li><a href="#">TEMPORADA 2</a></li>
+                        
+            </ul>
+            
+            <!--TABLA-->
+              <ul id="switcher-content" class="uk-switcher">
+
+            <li class="uk-active">
+            
+            <table class="uk-table-striped">
+                <caption class='.uk-margin-small-bottom'><strong>CALENDARIO</strong></caption>
+                <h2>DOMINGO, 1 DE ENERO</h2>
+                
+    <thead>
+        <tr class ="uk-table-middle">
+             <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+    <tbody>
+      {% for match in site.data.calendar %} 
+      <tr>
+        <td> {{ match.date }} </td>
+        <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
+        <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
+        <td><strong> {{ match.result }} </strong></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+                
+    <tbody>
+        <tr>
+            <td >8:00PM.</td>
+            <td ><img src="img/LosDuendes.png" width="40px" height="40px"> Los duendes. <strong>VS</strong></td>
+            <td ><img src="img/LosEscorpiones.png" width="40px" height="40px"> Los Escorpiones </td>
+            <td><strong>18-59</strong></td>
+        </tr>
+    </tbody>
+                </table>
+            <h2>SABADO, 7 DE ENERO</h2>
+            <table  class="uk-table-striped">
+                <thead>
+        <tr class ="uk-table-middle">
+           <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>5:00PM.</td>
+            <td><img src="img/LosS.png" width="40px" height="40px"> Los S <strong>VS</strong></td>
+            <td><img src="img/Losquilla2.png" width="40px" height="40px"> Los quillados </td>
+            <td><strong>45-79</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+     <td >6:00PM.</td>
+             <td><img src="img/Loslobos.png" width="40px" height="40px"> Los lobos <strong>VS</strong></td>
+             <td><img src="img/phoenix.png" width="40px" height="40px"> Phoenix </td>
+             <td><strong>78-89</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+     <td> 7:00PM.</td>
+            <td ><img src="img/Montandiu.png" width="40px" height="40px"> Montandiu <strong>VS</strong></td>
+             <td ><img src="img/UK.png" width="40px" height="40px"> UK </td>
+            <td><strong>51-39</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+     <td>8:00PM.</td>
+           <td><img src="img/Lasaguilas.png" width="40px" height="40px"> Las aguilas <strong>VS</strong></td>
+            <td><img src="img/Instagram.png" width="40px" height="40px"> IG </td>
+            <td><strong>78-101</strong></td>
+        </tr>
+    </tbody>
+    </table>
+            
+    <h2>DOMINGO, 8 DE ENERO</h2>
+            
+    <table  class="uk-table-striped">
+        <thead>
+         <tr class ="uk-table-middle">
+            <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td >5:00PM.</td>
+             <td ><img src="img/Evolution.png" width="40px" height="40px"> Evolution <strong>VS</strong></td>
+             <td><img src="img/Losjordies.png" width="40px" height="40px"> Los jordies </td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+     <td >6:00PM.</td>
+             <td ><img src="img/Losjordies.png" width="40px" height="40px"> Los jordies <strong> VS</strong> </td>
+             <td ><img src="img/Instagram.png" width="40px" height="40px"> IG </td>
+             <td><strong>0-0</strong></td>
+            <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+        </tr>
+            </tbody>
+    <tbody>
+        <tr>
+     <td >7:00PM.</td>
+             <td><img src="img/UK.png" width="40px" height="40px"> UK <strong> VS</strong></td>
+             <td><img src="img/Lasaguilas.png" width="40px" height="40px"> Las aguilas</td>
+             <td><strong>0-0</strong></td>
+            <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+             <td>8:00PM.</td>
+             <td><img src="img/losgg.png" width="40px" height="40px"> Los gg. <strong> VS</strong></td>
+             <td><img src="img/dragones.png" width="40px" height="40px"> Dragones</td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+        </tr>
+    </tbody>
+    </table>
+        <h2>SABADO, 14 DE ENERO</h2>
+    <table  class="uk-table-striped">
+        <thead>
+         <tr class ="uk-table-middle">
+            <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <td>5:00PM.</td>
+                <td><img src="img/Loscuerneros.png" width="40px" height="40px"> Los beceros<strong> VS</strong> </td>
+                <td><img src="img/Losjordies.png" width="40px" height="40px"> Los jordies</td>
+                <td><strong>0-0</strong></td>                 
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>6:00PM.</td>
+                 <td><img src="img/Losquilla2.png" width="40px" height="40px"> Los quillados <strong> VS</strong></td>
+                 <td><img src="img/Losbull2.png" width="40px" height="40px"> Los bulldogs</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>7:00PM</td>
+                 <td><img src="img/phoenix.png" width="40px" height="40px"> Phoenix <strong> VS</strong></td>
+                 <td><img src="img/LosDuendes.png" width="40px" height="40px"> Los duendes.</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>8:00PM.</td>
+                 <td><img src="img/Lospoyos.png" width="40px" height="40px"> Los pollos <strong> VS</strong></td>
+                 <td><img src="img/Loslobos.png" width="40px" height="40px"> Los lobos </td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>DOMING, 15 DE ENERO</h2>
+    <table  class="uk-table-striped">
+        <thead>
+         <tr class ="uk-table-middle">
+            <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+         <td>5:00PM.</td>
+                 <td><img src="img/Instagram.png" width="40px" height="40px"> IG <strong>VS</strong></td>
+                 <td>...</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>6:00PM.</td>
+                 <td>...</td>
+                 <td>...</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td >7:00PM.</td>
+                 <td>...</td>
+                 <td>...</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>8:00PM.</td>
+                 <td>...</td>
+                 <td>...</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+            </table>
+                
+            <h2>SABADO, 21 DE ENERO</h2>
+            <table class="uk-table-striped">
+                <thead>
+         <tr class ="uk-table-middle">
+            <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+         <td>5:00PM.</td>
+                 <td>...</td>
+                 <td>...</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>6:00PM.</td>
+                 <td>...</td>
+                 <td>...</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>7:00PM.</td>
+                 <td>...</td>
+                 <td>...</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>8:00PM.</td>
+                 <td>...</td>
+                 <td>...</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        </table>
+        <h2>DOMINGO, 22 DE ENERO</h2>
+        <table class="uk-table-striped">
+            <thead>
+                 <tr class ="uk-table-middle">
+                    <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+             <td>5:00PM.</td>
+                     <td>...</td>
+                     <td>...</td>
+                     <td><strong>0-0</strong></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+             <td>6:00PM</td>
+                     <td>...</td>
+                     <td>...</td>
+                     <td><strong>0-0</strong></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+             <td>7:00PM.</td>
+                     <td>...</td>
+                     <td>...</td>
+                     <td><strong>0-0</strong></td>
+                </tr>
+            </tbody>
+                <tbody>
+                <tr>
+             <td>8:00PM.</td>
+                     <td>...</td>
+                     <td>...</td>
+                     <td><strong>0-0</strong></td>
+                </tr>
+            </tbody>
+            </table>
+            <h2>SABADO, 28 DE ENERO</h2>
+            
+            <table class="uk-table-striped">
+                <thead>
+                     <tr class ="uk-table-middle">
+                        <th class="uk-width-1-10">HORA</th>
+                        <th class="uk-width-1-10">LOCAL</th>
+                        <th class="uk-width-1-10">VISITANTE</th>
+                        <th class="uk-width-1-10">RESULTADO</th>
+                        <th class="uk-width-1-10">TIEMPO</th>
+                        <th class="uk-width-1-10">ASIST</th>
+                        <th class="uk-width-1-10">FALTAS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                 <td>7:00PM.</td>
+                         <td>...</td>
+                         <td>...</td>
+                         <td><strong>0-0</strong></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                 <td>8:00PM.</td>
+                         <td>...</td>
+                         <td>...</td>
+                         <td><strong>0-0</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+                  </li>
+                  <li>
+                       <table class="uk-table-striped">
+                <caption class='.uk-margin-small-bottom'><strong>CALENDARIO</strong></caption>
+                <h2>DOMINGO, 29 DE ENERO</h2>
+                
+    <thead>
+        <tr class ="uk-table-middle">
+             <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr class ="uk-table-middle">   
+            <td class = "uk-table-center">5:00PM.</td>
+           <td><img src="img/Loscuerneros.png" width="40px" height="40px"> Los beceros <strong>VS</strong></td>
+            <td><img src="img/Evolution.png" width= "40px" height= "40px"> Evolution</td>
+            <td><strong>45-39</strong></td>     
+        </tr>
+    </tbody>
+    <tbody>
+        <tr class ="uk-table-middle">
+            <td >6:00PM.</td>
+            <td ><img src="img/LosEscorpiones.png" width="40px" height="40px">El escorpion<strong>VS</strong></td>
+            <td ><img src="img/LosDuendes.png" width="40px" height="40px"> Los duendes. </td>
+            <td><strong>33-29</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>7:00PM.</td>
+            <td><img src="img/Losquilla2.png" width="40px" height="40px"> Los quillados <strong>VS</strong></td>
+            <td><img src="img/phoenix.png" width="40px" height="40px"> Phoenix</td>
+            <td><strong>96-69</strong></td>
+        </tr>
+    </tbody>
+                
+    <tbody>
+        <tr>
+            <td >8:00PM.</td>
+            <td ><img src="img/Montandiu.png" width="40px" height="40px"> Montandiu <strong>VS</strong></td>
+            <td ><img src="img/dragones.png" width="40px" height="40px"> Dragones </td>
+            <td><strong>59-74</strong></td>
+        </tr>
+    </tbody>
+                </table>
+            <h2>SABADO, 4 DE FEBERERO</h2>
+            <table  class="uk-table-striped">
+                <thead>
+        <tr class ="uk-table-middle">
+           <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>5:00PM.</td>
+            <td><img src="img/Losfariseo.png" width="40px" height="40px">Los fariseo <strong>VS</strong></td>
+            <td><img src="img/losgg.png" width="40px" height="40px">Greatness</td>
+            <td><strong>45-79</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+     <td >6:00PM.</td>
+             <td><img src="img/Instagram.png" width="40px" height="40px"> IG <strong>VS</strong></td>
+             <td><img src="img/Losjordies.png" width="40px" height="40px"> Los jordies </td>
+             <td><strong>78-89</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+     <td> 7:00PM.</td>
+            <td ><img src="img/LosDuendes.png" width="40px" height="40px"> Los duendes <strong>VS</strong></td>
+             <td ><img src="img/Lasaguilas.png" width="40px" height="40px"> Las aguilas </td>
+            <td><strong>51-39</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+     <td>8:00PM.</td>
+           <td><img src="img/UK.png" width="40px" height="40px"> UK <strong>VS</strong></td>
+            <td><img src="img/Lospoyos.png" width="40px" height="40px"> Los pollos </td>
+            <td><strong>78-101</strong></td>
+        </tr>
+    </tbody>
+    </table>
+            
+    <h2>DOMINGO, 5 DE FEBRERO</h2>
+            
+    <table  class="uk-table-striped">
+        <thead>
+         <tr class ="uk-table-middle">
+            <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+             <td >5:00PM.</td>
+             <td ><img src="img/Evolution.png" width="40px" height="40px"> Evolution <strong>VS</strong></td>
+             <td><img src="img/Losjordies.png" width="40px" height="40px"> Los jordies </td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+     <td >6:00PM.</td>
+             <td ><img src="img/Losjordies.png" width="40px" height="40px"> Los jordies <strong> VS</strong> </td>
+             <td ><img src="img/Instagram.png" width="40px" height="40px"> IG </td>
+             <td><strong>0-0</strong></td>
+            <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+        </tr>
+            </tbody>
+    <tbody>
+        <tr>
+     <td >7:00PM.</td>
+             <td><img src="img/UK.png" width="40px" height="40px"> UK <strong> VS</strong></td>
+             <td><img src="img/Lasaguilas.png" width="40px" height="40px"> Las aguilas</td>
+             <td><strong>0-0</strong></td>
+            <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+             <td>8:00PM.</td>
+             <td><img src="img/losgg.png" width="40px" height="40px"> Los gg. <strong> VS</strong></td>
+             <td><img src="img/dragones.png" width="40px" height="40px"> Dragones</td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+             <td><strong>0-0</strong></td>
+        </tr>
+    </tbody>
+    </table>
+        <h2>SABADO, 11 DE FEBRERO</h2>
+    <table  class="uk-table-striped">
+        <thead>
+         <tr class ="uk-table-middle">
+            <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <td>5:00PM.</td>
+                <td><img src="img/Losjordies.png" width="40px" height="40px"> Los jordies<strong> VS</strong> </td>
+                <td><img src="img/Losbull2.png" width="40px" height="40px"> Los bulldogs</td>
+                <td><strong>0-0</strong></td>                 
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>6:00PM.</td>
+                 <td><img src="img/LosS.png" width="40px" height="40px">Souless <strong> VS</strong></td>
+                 <td><img src="img/Loslobos.png" width="40px" height="40px"> Los lobos</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>7:00PM</td>
+                 <td><img src="img/Lospoyos.png" width="40px" height="40px"> Los pollos <strong> VS</strong></td>
+                 <td><img src="img/Evolution.png" width="40px" height="40px">Evolution </td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>8:00PM.</td>
+                 <td><img src="img/losgg.png" width="40px" height="40px">Greatness<strong> VS</strong></td>
+                 <td><img src="img/LosEscorpiones.png" width="40px" height="40px"> Los escorpiones </td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>DOMINGO, 12 DE FEBRERO</h2>
+    <table  class="uk-table-striped">
+        <thead>
+         <tr class ="uk-table-middle">
+            <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+         <td>5:00PM.</td>
+                 <td><img src="img/dragones.png" width="40px" height="40px"> Dragones <strong>VS</strong></td>
+                 <td><img src="img/Losfariseo.png" width ="40px" height="40px">Los fariseos</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>6:00PM.</td>
+                 <td><img src="img/Losquilla2.png" width="40px" height="40px"> Los quillados<strong>VS</strong></td>
+                 <td><img src="img/Evolution.png" width="40px" height="40px">Evolution</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td >7:00PM.</td>
+                 <td><img src="img/LosDuendes.png" width="40px" height="40px"> Los duende<strong>VS</strong></td>
+                 <td><img src="img/UK.png" width="40px" height="40px"> UK</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>8:00PM.</td>
+                 <td><img src="img/phoenix.png" width="40px" height="40px"> Phoenix<strong>VS</strong></td>
+                 <td><img src="img/dragones.png" width="40px" height="40px"> Dragones</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+            </table>
+            <h2>SABADO, 18 DE FEBRERO</h2>
+            <table class="uk-table-striped">
+                <thead>
+         <tr class ="uk-table-middle">
+            <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+         <td>5:00PM.</td>
+                 <td><img src="img/Loscuerneros.png" width="40px" height="40px">Los beceros<strong>VS</strong></td>
+                 <td><img src="img/Losquilla2.png" width="40px" height="40px"> Los quillados</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>6:00PM.</td>
+                 <td><img src="img/UK.png" width="40px" height="40px">UK<strong>VS</strong></td>
+                 <td><img src="img/LosDuendes.png" width="40px" height="40px"> Los duende<strong>VS</strong></td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>7:00PM.</td>
+                 <td><img src="img/dragones.png" width="40px" height="40px">Los dragones<strong>VS</strong></td>
+                 <td><img src="img/Losbull2.png" width="40px" height="40px"> Los bulldogs</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+         <td>8:00PM.</td>
+                 <td>...</td>
+                 <td>...</td>
+                 <td><strong>0-0</strong></td>
+            </tr>
+        </tbody>
+        </table>
+        <h2>SABADO, 21 DE ENERO</h2>
+        <table class="uk-table-striped">
+            <thead>
+                 <tr class ="uk-table-middle">
+                    <th class="uk-width-1-10">HORA</th>
+            <th class="uk-width-1-10">LOCAL</th>
+            <th class="uk-width-1-10">VISITANTE</th>
+            <th class="uk-width-1-10">RESULTADO</th>
+            <th class="uk-width-1-10">TIEMPO</th>
+            <th class="uk-width-1-10">ASIST</th>
+            <th class="uk-width-1-10">FALTAS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+             <td>5:00PM.</td>
+                     <td>...</td>
+                     <td>...</td>
+                     <td><strong>0-0</strong></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+             <td>6:00PM</td>
+                     <td>...</td>
+                     <td>...</td>
+                     <td><strong>0-0</strong></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+             <td>7:00PM.</td>
+                     <td>...</td>
+                     <td>...</td>
+                     <td><strong>0-0</strong></td>
+                </tr>
+            </tbody>
+                <tbody>
+                <tr>
+             <td>8:00PM.</td>
+                     <td>...</td>
+                     <td>...</td>
+                     <td><strong>0-0</strong></td>
+                </tr>
+            </tbody>
+            </table>
+            <h2>DOMINGO, 22 DE ENERO</h2>
+            
+            <table class="uk-table-striped">
+                <thead>
+                     <tr class ="uk-table-middle">
+                        <th class="uk-width-1-10">HORA</th>
+                        <th class="uk-width-1-10">LOCAL</th>
+                        <th class="uk-width-1-10">VISITANTE</th>
+                        <th class="uk-width-1-10">RESULTADO</th>
+                        <th class="uk-width-1-10">TIEMPO</th>
+                        <th class="uk-width-1-10">ASIST</th>
+                        <th class="uk-width-1-10">FALTAS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                 <td>7:00PM.</td>
+                         <td>...</td>
+                         <td>...</td>
+                         <td><strong>0-0</strong></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                 <td>8:00PM.</td>
+                         <td>...</td>
+                         <td>...</td>
+                         <td><strong>0-0</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+                  </li>
+            </ul>
+        </div>
+          <div class="tm-footer">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                    <li><a href="http://github.com/uikit/uikit">GitHub</a></li>
+                    <li><a href="http://github.com/uikit/uikit/issues">Issues</a></li>
+                    <li><a href="http://github.com/uikit/uikit/blob/master/CHANGELOG.md">Changelog</a></li>
+                    <li><a href="https://twitter.com/getuikit">Twitter</a></li>
+                </ul>
+                
+                <div class="uk-panel">
+                    <p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+                    <a href="../index.html">Copyright</a>
+                </div>
+              </div>
+        </div>
+
