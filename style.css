@@ -24,6 +24,7 @@ th {
 
 body {
     background-color: #EEEEEE;
+    
 }
 
 .uk-block {
@@ -32,4 +33,7 @@ body {
 
 table {
     background-color: white;
+}
+h1 {
+    font-family: 'Passion One', cursive;
 }
