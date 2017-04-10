@@ -46,54 +46,101 @@
                 <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Brand</div>
             </nav>
             
-            <!--Tabla-->
-            <div class="uk-block uk-block-primary"><img src="img/dragones.png" width="300" height="300"><strong>LOS DRAGONES</strong></div>
-            <table class="uk-table-striped">
-                <caption class='.uk-margin-small-bottom'><strong>CALENDARIO</strong></caption>
+            <div class="uk-block uk-block-primary" >
+                <img src="img/dragones.png" width="300" height="300"><h2> LOS DRAGONES</h2>
                 
-                
-    <thead>
-        <tr class ="uk-table-middle">
-             <th class="uk-width-1-10">NO.</th>
-            <th class="uk-width-1-2">NOMBRE</th>
-            <th class="uk-width-1-2">ESTATURA</th>
-            <th class="uk-width-1-2">POSICION</th>
-            <th class="uk-width-1-2">PESO(LB)</th>
+            </div>
+            
+         <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content'}">
+                        <li class="uk-active"><a href="#">Jugadores</a></li>
+                        <li><a href="#">Pabellon</a></li>
+                        
+                    </ul>
 
-       
-        </tr>
-    </thead>
-    <tbody >
-        <tr class ="uk-table-middle">   
-            <td class = "uk-table-center">02</td>
-            <td>Leo Geronimo</td>
-            <td>Base</td>
-            <td>5'9</td>
-            <td>172</td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr class ="uk-table-middle">
-            <td >06</td>
-            <td ><img src="img/Losfariseo.png" width="40px" height="40px"> Los fariseos. <strong>VS</strong></td>
-            <td ><img src="img/losgg.png" width="40px" height="40px"> Los gg. </td>
-            <td><strong>33-29</strong></td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <td>17</td>
-            <td><img src="img/Losbull2.png" width="40px" height="40px"> Los bulldogs <strong>VS</strong></td>
-            <td><img src="img/Lospoyos.png" width="40px" height="40px"> Los pollos </td>
-            <td><strong>96-69</strong></td>
-        </tr>
-    </tbody>
-                
-    <tbody>
-        <tr>
-            <td >22</td>
-            <td ><img src="img/LosDuendes.png" width="40px" height="40px"> Los duendes. <strong>VS</strong></td>
-            <td ><img src="img/LosEscorpiones.png" width="40px" height="40px"> Los Escorpiones </td>
-            <td><strong>18-59</strong></td>
-        </tr>
-    </tbody>
+   
+            <!--Tabla-->
+            
+            <ul id="switcher-content" class="uk-switcher">
+
+            <li class="uk-active">
+                <table class="uk-table-striped">
+
+                    <thead>
+                        <tr class ="uk-table-middle">
+                             <th class="uk-width-1-10">NO.</th>
+                            <th class="uk-width-1-2">NOMBRE</th>
+                            <th class="uk-width-1-2">ESTATURA</th>
+                            <th class="uk-width-1-2">POSICION</th>
+                            <th class="uk-width-1-2">PESO(LB)</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr class ="uk-table-middle">   
+                            <td class = "uk-table-center">02</td>
+                            <td>Leo Geronimo</td>
+                            <td>Base</td>
+                            <td>172</td>
+                            <td>5'9</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class ="uk-table-middle">
+                            <td >06</td>
+                            <td>Juan Morillo</td>
+                            <td >Pivot</td>
+                            <td>178</td>
+                            <td>5'10</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>17</td>
+                            <td>Carlos Moreta</td>
+                            <td>Escolta</td>
+                            <td>158</td>
+                            <td>6'2</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td >22</td>
+                            <td>Marlon Moreta</td>
+                            <td>ala - Pivot</td>
+                            <td>158</td>
+                            <td>6'2</td>
+                        </tr>
+                    </tbody>
+                     <tbody>
+                        <tr>
+                            <td >27</td>
+                            <td>Marcos Compres</td>
+                            <td>Alero</td>
+                            <td>138</td>
+                            <td>6'2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </li>
+                <li>
+                 <div class="uk-grid uk-container-center" data-uk-grid-margin>
+                                <div class="uk-width-medium-1-3">
+                                    <div class="uk-thumbnail uk-overlay-hover" data-uk-modal="{target:'#modal-1'}" >
+                                        <figure class="uk-overlay">
+                                            <img width="600" height="400" src="img/pabellon.jpg" alt="">
+                                            <figcaption class="uk-overlay-panel uk-overlay-icon uk-overlay-background uk-overlay-fade"></figcaption>
+                                            <a class="uk-position-cover" href="#"></a>
+                                        </figure>
+                                    </div>
+                                    <div id="modal-1" class="uk-modal">
+                                        <div class="uk-modal-dialog uk-modal-dialog-lightbox">
+                                            <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+                                            <img width="600" height="400" src="img/pabellon.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </li>
+            </ul>
+    </div>
+</html>
