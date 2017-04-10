@@ -12,7 +12,7 @@ layout: default
     <tbody>
         {% for team in site.data.equipo limit:18 %} 
         <tr class ="uk-table-middle">   
-            <td class = "uk-table-center"><img src="{{"/assets/img/"}}{{ team.picture}}" width="40px" height="40px"> <a href="">{{team.name}}</a></td>
+            <td class = "uk-table-center"><img src="{{"/assets/img/"}}{{ team.picture}}" width="40px" height="40px"> <a href="{{team.url}}">{{team.name}}</a></td>
 
         </tr>
         {% endfor %} 

@@ -5,8 +5,8 @@ url: calendario
 
           
   <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content'}">
-    <li class="uk-active"><a href="#">TEMPORADA 1</a></li>
-    <li><a href="#">TEMPORADA 2</a></li>
+    <li class="uk-active"><a href="#">TEMPORADA 2017-1</a></li>
+    <li><a href="#">TEMPORADA 2017-2</a></li>
     </ul>
     <!--TABLA-->
       <ul id="switcher-content" class="uk-switcher">
@@ -31,6 +31,9 @@ url: calendario
           <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
           <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
           <td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.time }} </strong></td>
+              <td><strong> {{ match.assist }} </strong></td>
+              <td><strong> {{ match.fails }} </strong></td>
         </tr>
       {% endfor %}
       </tbody>              
@@ -55,6 +58,9 @@ url: calendario
         <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
         <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
         <td><strong> {{ match.result }} </strong></td>
+				<td><strong> {{ match.time }} </strong></td>
+        <td><strong> {{ match.assist }} </strong></td>
+        <td><strong> {{ match.fails }} </strong></td>
       </tr>
       {% endfor %}
    </tbody>
@@ -79,6 +85,9 @@ url: calendario
         <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
         <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
         <td><strong> {{ match.result }} </strong></td>
+				<td><strong> {{ match.time }} </strong></td>
+        <td><strong> {{ match.assist }} </strong></td>
+        <td><strong> {{ match.fails }} </strong></td>
       </tr>
       {% endfor %}
     </tbody>
@@ -103,6 +112,10 @@ url: calendario
             <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
             <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
             <td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.time }} </strong></td>
+						<td><strong> {{ match.assist }} </strong></td>
+						<td><strong> {{ match.fails }} </strong></td>
           </tr>
         {% endfor %}
         </tbody>
@@ -127,6 +140,10 @@ url: calendario
             <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
             <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
             <td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.time }} </strong></td>
+						<td><strong> {{ match.assist }} </strong></td>
+						<td><strong> {{ match.fails }} </strong></td>
           </tr>
         {% endfor %}
         </tbody>
@@ -145,12 +162,16 @@ url: calendario
           </tr>
         </thead>
         <tbody>
-          {% for match in site.data.calendar limit: 5 offset:20 %} 
+          {% for match in site.data.calendar limit: 5 offset:25 %} 
           <tr>
             <td> {{ match.date }} </td>
             <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
             <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
             <td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.time }} </strong></td>
+						<td><strong> {{ match.assist }} </strong></td>
+						<td><strong> {{ match.fails }} </strong></td>
           </tr>
         {% endfor %}        
         </tbody>
@@ -169,12 +190,16 @@ url: calendario
             </tr>
           </thead>
           <tbody>
-          {% for match in site.data.calendar limit: 5 offset:25 %} 
+          {% for match in site.data.calendar limit: 5 offset:30 %} 
           <tr>
             <td> {{ match.date }} </td>
             <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
             <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
             <td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.time }} </strong></td>
+						<td><strong> {{ match.assist }} </strong></td>
+						<td><strong> {{ match.fails }} </strong></td>
           </tr>
         {% endfor %}
           </tbody>
@@ -193,18 +218,24 @@ url: calendario
                     </tr>
                 </thead>
                 <tbody>
-                {% for match in site.data.calendar limit: 5 offset:30 %} 
+                {% for match in site.data.calendar limit: 5 offset:35 %} 
           <tr>
             <td> {{ match.date }} </td>
             <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
             <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
             <td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.result }} </strong></td>
+						<td><strong> {{ match.time }} </strong></td>
+						<td><strong> {{ match.assist }} </strong></td>
+						<td><strong> {{ match.fails }} </strong></td>
           </tr>
         {% endfor %}
         </tbody>
       </table>
+          </li>
+          <li>
       <table class="uk-table-striped">
-        <caption class='.uk-margin-small-bottom'><strong>CALENDARIO</strong></caption>
+        
          <h2>DOMINGO, 29 DE ENERO</h2>
                 
     <thead>
@@ -219,12 +250,15 @@ url: calendario
         </tr>
     </thead>
     <tbody >
-      {% for match in site.data.calendar limit: 5 offset:35 %} 
+      {% for match in site.data.calendar limit: 5 offset:40 %} 
           <tr>
             <td> {{ match.date }} </td>
             <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
             <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
             <td><strong> {{ match.result }} </strong></td>
+            <td><strong> {{ match.time }} </strong></td>
+            <td><strong> {{ match.assist }} </strong></td>
+            <td><strong> {{ match.fails }} </strong></td>
           </tr>
       {% endfor %}
       </tbody>
@@ -243,12 +277,15 @@ url: calendario
         </tr>
     </thead>
     <tbody>
-      {% for match in site.data.calendar limit: 5 offset:40 %} 
+      {% for match in site.data.calendar limit: 5 offset:45 %} 
           <tr>
             <td> {{ match.date }} </td>
             <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
             <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
             <td><strong> {{ match.result }} </strong></td>
+            <td><strong> {{ match.time }} </strong></td>
+            <td><strong> {{ match.assist }} </strong></td>
+            <td><strong> {{ match.fails }} </strong></td>
           </tr>
       {% endfor %}    
       </tbody>
@@ -269,12 +306,15 @@ url: calendario
         </tr>
     </thead>
     <tbody>
-      {% for match in site.data.calendar limit: 5 offset:45 %} 
+      {% for match in site.data.calendar limit: 5 offset:50 %} 
           <tr>
             <td> {{ match.date }} </td>
             <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
             <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
             <td><strong> {{ match.result }} </strong></td>
+            <td><strong> {{ match.time }} </strong></td>
+            <td><strong> {{ match.assist }} </strong></td>
+            <td><strong> {{ match.fails }} </strong></td>
           </tr>
       {% endfor %}    
       </tbody>
@@ -293,12 +333,15 @@ url: calendario
         </tr>
     </thead>
         <tbody>
-      {% for match in site.data.calendar limit: 5 offset:50 %} 
+      {% for match in site.data.calendar limit: 5 offset:55 %} 
           <tr>
             <td> {{ match.date }} </td>
             <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
             <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
             <td><strong> {{ match.result }} </strong></td>
+              <td><strong> {{ match.time }} </strong></td>
+              <td><strong> {{ match.assist }} </strong></td>
+              <td><strong> {{ match.fails }} </strong></td>
           </tr>
       {% endfor %}                    
       </tbody>
@@ -317,12 +360,15 @@ url: calendario
         </tr>
     </thead>
     <tbody>    
-    {% for match in site.data.calendar limit: 5 offset:55 %} 
+    {% for match in site.data.calendar limit: 5 offset:60 %} 
       <tr>
         <td> {{ match.date }} </td>
         <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
         <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
         <td><strong> {{ match.result }} </strong></td>
+        <td><strong> {{ match.time }} </strong></td>
+        <td><strong> {{ match.assist }} </strong></td>
+        <td><strong> {{ match.fails }} </strong></td>
       </tr>
       {% endfor %}                    
         </tbody>
@@ -341,12 +387,15 @@ url: calendario
             </tr>
           </thead>
           <tbody>
-            {% for match in site.data.calendar limit: 5 offset:60 %} 
+            {% for match in site.data.calendar limit: 5 offset:65 %} 
             <tr>
               <td> {{ match.date }} </td>
               <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
               <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
               <td><strong> {{ match.result }} </strong></td>
+              <td><strong> {{ match.time }} </strong></td>
+              <td><strong> {{ match.assist }} </strong></td>
+              <td><strong> {{ match.fails }} </strong></td>
             </tr>
             {% endfor %}                    
           </tbody>
@@ -365,12 +414,15 @@ url: calendario
                 </tr>
             </thead>
             <tbody>
-              {% for match in site.data.calendar limit: 5 offset:65 %} 
+              {% for match in site.data.calendar limit: 5 offset:70 %} 
                 <tr>
                   <td> {{ match.date }} </td>
                   <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
                   <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
                   <td><strong> {{ match.result }} </strong></td>
+                  <td><strong> {{ match.time }} </strong></td>
+                  <td><strong> {{ match.assist }} </strong></td>
+                  <td><strong> {{ match.fails }} </strong></td>
                 </tr>
               {% endfor %}                    
             </tbody>
@@ -389,16 +441,25 @@ url: calendario
                   </tr>
               </thead>
               <tbody>
-                {% for match in site.data.calendar limit: 5 offset:65 %} 
+                {% for match in site.data.calendar limit: 5 offset:75 %} 
                   <tr>
                     <td> {{ match.date }} </td>
                     <td><img src="{{"/assets/img/"}}{{ match.localpicture}}" width="40px" height="40px"> {{ match.local }} <strong>VS</strong></td>
                     <td><img src="{{"/assets/img/"}}{{ match.visitorpicture}}" width="40px" height="40px"> {{ match.visitor }} </td>
                     <td><strong> {{ match.result }} </strong></td>
+										<td><strong> {{ match.time }} </strong></td>
+										<td><strong> {{ match.assist }} </strong></td>
+              			<td><strong> {{ match.fails }} </strong></td>
+											
                   </tr>
                 {% endfor %}                    
               </tbody>
             </table>
           </li>
+          <li>
+              
+              
+          </li>
         </ul>
-      </div>
+
+      
