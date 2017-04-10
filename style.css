@@ -37,3 +37,7 @@ table {
 h1 {
     font-family: 'Passion One', cursive;
 }
+.tm-footer {
+    background-color: #332A23;
+    color: white;
+}
